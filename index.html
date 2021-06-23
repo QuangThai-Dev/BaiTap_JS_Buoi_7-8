@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Bài tập về mảng</h2>
+        <div class="row">
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="">Nhập số vào mảng</label>
+                    <input type="text" class="form-control" name="" id="txtNumBer" aria-describedby="helpId" placeholder="Nhập số vào mảng">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="">Vị trí 1</label>
+                    <input type="text" class="form-control" name="" id="txtViTri1" aria-describedby="helpId" placeholder="Nhập vị trí">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="">Vị trí 2</label>
+                    <input type="text" class="form-control" name="" id="txtViTri2" aria-describedby="helpId" placeholder="Nhập vị trí">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <!-- Thêm số vào mảng -->
+                <button class="btn btn-danger" id="btnThemSo">Thêm số</button>
+                <!-- Tổng các số dượng -->
+                <button class="btn btn-danger" id="btnTongSoDuong">Tổng các số dương</button>
+                <!-- Đếm số dương -->
+                <button class="btn btn-primary" id="btnDemSoDuong">Đếm số dương</button>
+                <!-- Sắp xếp mảng -->
+                <button class="btn btn-dark mt-1" id="btnSapXep">Sắp xếp mảng</button>
+                <!-- Số nhỏ nhất trong mảng -->
+                <button class="btn btn-primary mt-1 mr-1" id="btnSoNhoNhat">Số nhỏ nhất trong mảng</button>
+                <!-- Số dương nhỏ nhất trong mảng -->
+                <button class="btn btn-info mt-1" id="btnSoDuongNhoNhat">Số dương nhỏ nhất trong mảng</button>
+                <!-- Số chẵn cuối cùng trong mảng -->
+                <button class="btn btn-dark mt-1" id="btnSochanCuoiCung">Số chẵn cuối cùng trong mảng</button>
+
+                <!-- So sánh số lượng số âm và số dương -->
+                <button class="btn btn-success mt-1" id="btnSoSanh">So sánh số lượng số âm và số dương</button>
+                <!-- Đếm số nguyên trong mảng -->
+                <button class="btn btn-info mt-1" id="btnDemSoNguyen">Đếm số nguyên trong mảng số thực</button>
+                <!-- Tìm số nguyên tố trong mảng -->
+                <button class="btn btn-info mt-1" id="btnTimSoNguyenTo">Tìm số nguyên tố</button>
+
+                <!-- Xuất thông tin mảng -->
+                <div class="alert alert-success mt-2" id="xuatThongTin" style="display: none;">
+
+                </div>
+                <!-- Xuất tổng số dương -->
+                <div class="alert alert-success mt-2" id="xuatTongSoDuong" style="display: none;">
+
+                </div>
+                <!-- Đếm số dương -->
+                <div class="alert alert-success mt-2" id="demSoDuong" style="display: none;">
+
+                </div>
+                <!-- Tìm số nhỏ nhất trong mảng -->
+                <div class="alert alert-success mt-2" id="soNhoNhat" style="display: none;">
+
+                </div>
+                <!-- Tìm số dương nhỏ nhất trong mảng -->
+                <div class="alert alert-success mt-2" id="soDuongNhoNhat" style="display: none;">
+
+                </div>
+                <!-- Timg số chẵn cuối cùng trong mảng -->
+                <div class="alert alert-success mt-2" id="soChanCuoiCung" style="display: none;">
+
+                </div>
+                <!-- Sắp xếp lại mảng tăng dần -->
+                <div class="alert alert-success mt-2" id="sapXep" style="display: none;">
+
+                </div>
+                <!-- So sánh số lượng số âm và số dương trong mảng -->
+                <div class="alert alert-success mt-2" id="soSanh" style="display: none;">
+
+                </div>
+                <!-- Đếm số nguyên -->
+                <div class="alert alert-success mt-2" id="demSoNguyen" style="display: none;">
+
+                </div>
+                <!-- Số nguyên tố đầu tiên của mảng -->
+                <div class="alert alert-success mt-2" id="soNguyenTo" style="display: none;">
+
+                </div>
+            </div>
+            <div class="col-4">
+                <!-- Số dương nhỏ nhất trong mảng -->
+                <button class="btn btn-info mt-1" id="btnDoiViTri">Đổi chỗ hai vị trí</button>
+                <!-- Số nguyên tố đầu tiên của mảng -->
+                <div class="alert alert-success mt-2" id="xuatDoiViTri" style="display: none;">
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
