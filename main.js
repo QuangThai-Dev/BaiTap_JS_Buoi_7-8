@@ -14,6 +14,9 @@ var themSo = function() {
     } else if (txtNumBer != parseFloat(txtNumBer)) {
         alert('Yêu cầu nhập số nguyên');
         return;
+    } else if (txtNumBer > 100) {
+        alert('Nhâp số không quá 100');
+        return;
     } else {
 
         arr.push(parseFloat(txtNumBer));
